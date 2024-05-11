@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css_files/user/index.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="welcome">
+        <a class="link" href="{% url 'user:index' %}">
+            Welcome!
+        </a>
+    </div>
+</div>
+{% endblock %}

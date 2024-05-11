@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>
+    Кабинет пользователя
+</h1>
+<div style="display: grid;">
+    <a href="{% url 'city:index' %}">Кабинет города</a>
+    <a href="{% url 'city_hall:index' %}">Кабинет мерии</a>
+    <a href="{% url 'master:index' %}">Кабинет мастера</a>
+    <a href="{% url 'company:index' %}">Кабинет фирмы</a>
+    <a href="{% url 'prefecture:index' %}">Кабинет префектуры</a>
+</div>
+{% endblock %}
