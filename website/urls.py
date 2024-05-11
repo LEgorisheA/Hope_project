@@ -26,6 +26,6 @@ urlpatterns = [
     path('prefecture/', include('prefecture.urls', namespace='prefecture')),
     path('master/', include('master.urls', namespace='master')),
     path('city/', include('city.urls', namespace='city')),
-    path('city_hall/', include('city_hall', namespace='city_hall')),
+    path('city_hall/', include('city_hall.urls', namespace='city_hall')),
 
 ]
